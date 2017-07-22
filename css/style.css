@@ -1,7 +1,7 @@
 /** General CSS **/
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 body {
   font-family: 'Raleway', 'Source Sans Pro', sans-serif;
@@ -10,4 +10,67 @@ body {
 }
 p {
   font-size: 14px;
+}
+
+/** Header **/
+.header {
+  background-image: url("../images/header-bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.header-photo img {
+  width: 90%
+}
+
+.header-overlay {
+  background-color: rgba(31,31,31,0.75);
+}
+.logo {
+  padding: 3% 0px;
+}
+.logo img{
+  height: 100px;
+  width: 100px;
+}
+.header-text h1 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 45px;
+  padding-top: 15%;
+  text-transform: uppercase;
+}
+
+.header-text p {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 28px;
+}
+.header-btns {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.header-btns a {
+  align-self: center;
+  background: transparent;
+  border: 1px solid #129CF3;
+  padding: 10px 30px 10px 30px;
+  font-size: 19px;
+  font-weight: 200;
+  text-transform: uppercase;
+  border-radius: 3px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+}
+.header-btns a:hover {
+  background-color: #129CF3;
+  color: #fff;
 }
