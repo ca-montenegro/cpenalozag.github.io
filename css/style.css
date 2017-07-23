@@ -1,25 +1,31 @@
-/** general css **/
+/* ========= General CSS ============= */
+
 * {
   margin: 0;
   padding: 0;
 }
 body {
   ffont-family: 'Raleway', sans-serif;
-    overflow-y: scroll;
-    overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 html, body {
-    height:100%;
+  height:100%;
 }
 p {
   font-size: 18px;
-    line-height: 28px;
-    font-weight: 300;
+  line-height: 28px;
+  font-weight: 300;
+}
+i {
+  color: #129CF3;
+  font-size: 25px;
 }
 
-/** header **/
+/* ========= Header ============= */
+
 .header {
-  min-height: 100%;
+  height: 100%;
   background-image: url("../images/bk.jpeg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -30,45 +36,22 @@ p {
   -o-background-size: cover;
 }
 .header-photo img {
-  margin-top: 15%;
-    width: 80%;
+  max-width: 40vh;
+  border: 2px solid #129CF3;
   border-radius: 50%;
-  border: 1px solid #129cf3;
+  margin-top: 8vh;
+  margin-bottom: 4vh;
 }
 .container {
+  padding: 5vh;
   position: relative;
-  margin: auto;
-  max-width: 75%;
   height: 100%;
-}
-.header__lang {
-    float: right;
-    text-align: right;
+  overflow-y: auto;
 }
 .row-centered {
-  width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-}
-.v-centered {
-  position: absolute;
-  top: 30%;
-  height: 6em;
-  margin-top: -3em;
-}
-.v-bottom {
-  position: absolute;
-  top: 100%;
-  height: 6em;
-  margin-top: -3em;
-}
-.col {
-  width: 100%;
-    /* reset the text-align */
-    text-align:left;
-    /* inline-block space fix */
-    margin-right:-4px;
+  margin-top: 12vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
 }
 .header-overlay {
   height: 100%;
@@ -76,26 +59,25 @@ p {
   position: absolute;
   background-color: rgba(31,31,31,0.5);
 }
-.full-size{
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
 .header-text h1 {
+  text-align: left;
   color: #fff;
-  padding: 5% 0% 0%;
+  padding: 10% 0% 0%;
   font-size: 35px;
   font-weight: 300;
   line-height: 45px;
   text-transform: uppercase;
 }
 .header-text p {
+  text-align: left;
   color: #fff;
 }
 .header-btns {
+  text-align: left;
   padding-top: 10%;
 }
 #btn-contact {
+  color: #129cf3;
   background: transparent;
   border: 1px solid #129cf3;
   padding: 1% 3%;
@@ -131,4 +113,229 @@ p {
   color: #129CF3;
   font-size: 25px;
   padding-left: 5%;
+}
+
+/* ========= About me ============= */
+
+.about-me-title {
+  padding-bottom: 20px;
+}
+.about-me-title h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+  position: relative;
+}
+.about-me-title h2:after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 70px;
+  height: 1px;
+  background-color: #129CF3;
+}
+
+.about-me-title p {
+  margin-top: 40px;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.about-me-item {
+  position: relative;
+  padding-bottom: 4px;
+  padding-left: 80px;
+}
+.about-me-item div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about-me-item div i {
+  font-size: 55px;
+  color: #129CF3;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  -moz-transition: all 1s;
+}
+.about-me-item h3 {
+  color: #343434;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.about-me-item p {
+  color: #727272;
+  font-size: 15px;
+}
+
+/* ========= Experience ============= */
+
+.experience-title {
+  padding-bottom: 20px;
+}
+.experience-title h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+  position: relative;
+}
+.experience-title h2:after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 70px;
+  height: 1px;
+  background-color: #129CF3;
+}
+
+.experience-title p {
+  margin-top: 40px;
+  font-size: 19px;
+  line-height: 24px;
+}
+.experience {
+  background-color: #273547;
+}
+.experience-text p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* ========= Projects ============= */
+
+.testimonial {
+  background-image: url("../images/3.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: 50% 50%;
+}
+.testimonial-overlay {
+  background-color: rgba(31, 31, 31, .75);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.carousel-indicators {
+  bottom: -10px;
+}
+.carousel-inner .item img {
+  border: 2px solid #129CF3;
+  border-radius: 50%;
+  padding: 3px;
+}
+.testimonial-caption {
+  padding-bottom: 70px;
+}
+.testimonial-caption h2 {
+  color: #129CF3;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 30px;
+  margin-top: 25px;
+
+}
+.testimonial-caption h4 {
+  color: #129CF3;
+}
+
+.testimonial-caption h4 span {
+
+  color: #D8D8D8;
+  font-style: italic;
+  font-weight: 300;
+
+}
+
+.testimonial-caption p {
+  color: #D8D8D8;
+  font-size: 18px;
+  line-height: 27px;
+  padding-top: 50px;
+}
+
+/* ========= skills ============= */
+.skills-inner-wrapper {
+
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+.left-feature-item {
+  position: relative;
+  padding-right: 90px;
+  margin-bottom: 65px;
+  text-align: right;
+  margin-top: 35px;
+}
+.left-feature-item-icon {
+  position: absolute;
+  right: 0;
+  top: -8px;
+  font-size: 40px;
+  color: #129CF3;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+
+}
+.left-feature-item h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 21px;
+  color: #333;
+}
+.left-feature-item p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+}
+.feature-iphone img {
+  width: 100%;
+}
+.right-feature-item {
+  position: relative;
+  padding-left: 90px;
+  margin-bottom: 65px;
+  margin-top: 35px;
+  text-align: left;
+}
+.right-feature-item-icon {
+  position: absolute;
+  left: 0;
+  top: -8px;
+  font-size: 40px;
+  color: #129CF3;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+
+}
+.right-feature-item h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 21px;
+  color: #333;
+
+
+}
+.right-feature-item p {
+
+  color: #333;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
 }
