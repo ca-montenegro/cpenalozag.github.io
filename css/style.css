@@ -64,7 +64,7 @@ i {
   color: #fff;
   padding: 10% 0% 0%;
   font-size: 35px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 45px;
   text-transform: uppercase;
 }
@@ -136,13 +136,9 @@ i {
   height: 1px;
   background-color: #129CF3;
 }
-
 .about-me-title p {
   margin-top: 40px;
-  font-size: 19px;
-  line-height: 24px;
 }
-
 .about-me-item {
   position: relative;
   padding-bottom: 4px;
@@ -166,11 +162,6 @@ i {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 800;
-}
-
-.about-me-item p {
-  color: #727272;
-  font-size: 15px;
 }
 
 /* ========= Experience ============= */
@@ -198,21 +189,109 @@ i {
 
 .experience-title p {
   margin-top: 40px;
-  font-size: 19px;
-  line-height: 24px;
 }
 .experience {
   background-color: #273547;
 }
 .experience-text p {
   color: #fff;
-  font-size: 18px;
-  font-weight: 300;
+}
+.experience-list ul{
+    padding-bottom: 3vh;
+}
+.experience-list ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #129CF3;
+}
+.experience-list ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+.experience-list ul li div {
+  position: relative;
+  width: 50vh;
+  padding: 10px;
+  background: #fff;
+}
+.experience-list ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.experience-list ul li:nth-child(odd) div {
+  left: 10vh;
+}
+
+.experience-list ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.experience-list ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.experience-list ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #fff;
+}
+.experience-list p {
+  color: #129CF3;
+}
+
+/* ========= skills ============= */
+.skills h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.skills h2:after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 70px;
+  height: 1px;
+  background-color: #129CF3;
+}
+.medium-img{
+  width:150px;
+  height:150px;
+  display: block;
+  margin: 0 auto;
+  display: flex;
+}
+.left-feature-item h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 21px;
+  color: #333;
 }
 
 /* ========= Projects ============= */
 
-.testimonial {
+.projects {
   background-image: url("../images/3.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -222,7 +301,7 @@ i {
   -webkit-background-size: cover;
   background-position: 50% 50%;
 }
-.testimonial-overlay {
+.projects-overlay {
   background-color: rgba(31, 31, 31, .75);
   padding-top: 80px;
   padding-bottom: 80px;
@@ -235,10 +314,10 @@ i {
   border-radius: 50%;
   padding: 3px;
 }
-.testimonial-caption {
+.projects-caption {
   padding-bottom: 70px;
 }
-.testimonial-caption h2 {
+.projects-caption h2 {
   color: #129CF3;
   text-transform: uppercase;
   font-weight: 900;
@@ -246,11 +325,11 @@ i {
   margin-top: 25px;
 
 }
-.testimonial-caption h4 {
+.projects-caption h4 {
   color: #129CF3;
 }
 
-.testimonial-caption h4 span {
+.projects-caption h4 span {
 
   color: #D8D8D8;
   font-style: italic;
@@ -258,84 +337,9 @@ i {
 
 }
 
-.testimonial-caption p {
+.projects-caption p {
   color: #D8D8D8;
   font-size: 18px;
   line-height: 27px;
   padding-top: 50px;
-}
-
-/* ========= skills ============= */
-.skills-inner-wrapper {
-
-  padding-top: 30px;
-  padding-bottom: 70px;
-}
-.left-feature-item {
-  position: relative;
-  padding-right: 90px;
-  margin-bottom: 65px;
-  text-align: right;
-  margin-top: 35px;
-}
-.left-feature-item-icon {
-  position: absolute;
-  right: 0;
-  top: -8px;
-  font-size: 40px;
-  color: #129CF3;
-  width: 90px;
-  height: 90px;
-  text-align: center;
-
-}
-.left-feature-item h3 {
-  text-transform: uppercase;
-  font-size: 25px;
-  font-weight: 700;
-  margin-bottom: 21px;
-  color: #333;
-}
-.left-feature-item p {
-  color: #333;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 25px;
-}
-.feature-iphone img {
-  width: 100%;
-}
-.right-feature-item {
-  position: relative;
-  padding-left: 90px;
-  margin-bottom: 65px;
-  margin-top: 35px;
-  text-align: left;
-}
-.right-feature-item-icon {
-  position: absolute;
-  left: 0;
-  top: -8px;
-  font-size: 40px;
-  color: #129CF3;
-  width: 90px;
-  height: 90px;
-  text-align: center;
-
-}
-.right-feature-item h3 {
-  text-transform: uppercase;
-  font-size: 25px;
-  font-weight: 700;
-  margin-bottom: 21px;
-  color: #333;
-
-
-}
-.right-feature-item p {
-
-  color: #333;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 25px;
 }
