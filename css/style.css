@@ -177,6 +177,10 @@ i {
 .experience-title {
   padding-bottom: 20px;
 }
+.experience-overlay {
+  height: 100%;
+  background-color: rgba(39,53,71,0.9);
+}
 .experience-title h2 {
   text-align: center;
   color: #fff;
@@ -196,12 +200,18 @@ i {
   background-color: #129CF3;
   margin-left:-30px;
 }
-
 .experience-title p {
   margin-top: 40px;
 }
 .experience {
-  background-color: #273547;
+  background-image: url("../images/2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 .experience-text p {
   color: #fff;
@@ -290,10 +300,6 @@ i {
   max-width: width:150px;
   max-height:150px;
 }
-.sm-img{
-  width:15%;
-  height:15%;
-}
 .left-feature-item h3 {
   text-transform: uppercase;
   font-size: 25px;
@@ -309,6 +315,26 @@ i {
 }
 /* ========= Projects ============= */
 
+.projects-title h2 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+  position: relative;
+  margin-bottom: 5%;
+}
+.projects-title h2:after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  width: 70px;
+  height: 1px;
+  background-color: #129CF3;
+  margin-left:-30px;
+}
 .projects {
   background-image: url("../images/1.jpg");
   background-attachment: fixed;
@@ -320,9 +346,12 @@ i {
   background-position: 50% 50%;
   height: 95%;
 }
+.sm-img{
+  width:12%;
+  height:12%;
+}
 .projects-overlay {
   background-color: rgba(39, 58, 75, 0.85);
-  padding-top: 3%;
   height: 100%
 }
 .carousel-indicators {
@@ -334,7 +363,7 @@ i {
   padding: 3px;
 }
 .projects-caption {
-  padding-bottom: 10%;
+  padding-bottom: 8%;
 }
 .projects-caption h2 {
   color: #129CF3;
