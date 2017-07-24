@@ -5,7 +5,7 @@
   padding: 0;
 }
 body {
-  ffont-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -16,6 +16,7 @@ p {
   font-size: 18px;
   line-height: 28px;
   font-weight: 300;
+  color: #123;
 }
 i {
   color: #129CF3;
@@ -132,6 +133,7 @@ i {
   font-size: 30px;
   line-height: 37px;
   position: relative;
+  color: #123;
 }
 .about-me-title h2:after {
   text-align: center;
@@ -146,6 +148,7 @@ i {
 }
 .about-me-title p {
   margin-top: 40px;
+
 }
 .about-me-item {
   position: relative;
@@ -166,7 +169,7 @@ i {
   -moz-transition: all 1s;
 }
 .about-me-item h3 {
-  color: #343434;
+  color: #123;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 800;
@@ -252,21 +255,17 @@ i {
   height: 0;
   border-style: solid;
 }
-
 .experience-list ul li:nth-child(odd) div {
   left: 10vh;
 }
-
 .experience-list ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
   border-color: transparent #fff transparent transparent;
 }
-
 .experience-list ul li:nth-child(even) div {
   left: -439px;
 }
-
 .experience-list ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
@@ -285,6 +284,7 @@ i {
   line-height: 37px;
   position: relative;
   margin-bottom: 40px;
+  color: #123;
 }
 .skills h2:after {
   content: "";
@@ -296,23 +296,18 @@ i {
   background-color: #129CF3;
   margin-left: -30px;
 }
+.skills h3 {
+  font-size: 55px;
+  color: #123;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;
+}
 .medium-img{
   max-width: width:150px;
   max-height:150px;
 }
-.left-feature-item h3 {
-  text-transform: uppercase;
-  font-size: 25px;
-  font-weight: 700;
-  margin-bottom: 21px;
-  color: #333;
-}
-.icon-c {
-  color: yellow;
-}
-.icon-d {
-  color: orange;
-}
+
 /* ========= Projects ============= */
 
 .projects-title h2 {
@@ -344,14 +339,13 @@ i {
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-position: 50% 50%;
-  height: 95%;
 }
 .sm-img{
   width:12%;
   height:12%;
 }
 .projects-overlay {
-  background-color: rgba(39, 58, 75, 0.85);
+  background-color: rgba(39, 58, 75, 0.9);
   height: 100%
 }
 .carousel-indicators {
@@ -407,4 +401,40 @@ i {
 #btn-repo:hover {
   background-color: #129cf3;
   color: #fff;
+}
+
+/* ========= Contact ============= */
+
+.contact h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+  position: relative;
+  margin-bottom: 40px;
+  color: #123;
+}
+.contact h2:after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  width: 70px;
+  height: 1px;
+  background-color: #129CF3;
+  margin-left: -30px;
+}
+#btn-links i {
+  padding: 0;
+  margin: 0;
+  color: #129CF3;
+  background: transparent;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+}
+#btn-links i:hover {
+  color: #123;
 }
