@@ -59,6 +59,9 @@ i {
   position: absolute;
   background-color: rgba(31,31,31,0.5);
 }
+.header-text{
+  margin-left: 6vh;
+}
 .header-text h1 {
   text-align: left;
   color: #fff;
@@ -75,6 +78,7 @@ i {
 .header-btns {
   text-align: left;
   padding-top: 10%;
+  margin-left: 7vh;
 }
 #btn-contact {
   color: #129cf3;
@@ -275,11 +279,9 @@ i {
   background-color: #129CF3;
 }
 .medium-img{
-  width:150px;
-  height:150px;
-  display: block;
-  margin: 0 auto;
-  display: flex;
+  max-width: width:150px;
+  max-height:150px;
+  border-radius: 50%;
 }
 .left-feature-item h3 {
   text-transform: uppercase;
@@ -292,7 +294,7 @@ i {
 /* ========= Projects ============= */
 
 .projects {
-  background-image: url("../images/3.jpg");
+  background-image: url("../images/1.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
