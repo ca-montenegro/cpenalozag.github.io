@@ -281,7 +281,6 @@ i {
 .medium-img{
   max-width: width:150px;
   max-height:150px;
-  border-radius: 50%;
 }
 .left-feature-item h3 {
   text-transform: uppercase;
@@ -290,7 +289,12 @@ i {
   margin-bottom: 21px;
   color: #333;
 }
-
+.icon-c {
+    color: yellow;
+}
+.icon-d {
+    color: orange;
+}
 /* ========= Projects ============= */
 
 .projects {
