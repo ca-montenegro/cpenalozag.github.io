@@ -197,16 +197,18 @@ i {
 }
 .about-me-item {
   position: relative;
-  padding-bottom: 4px;
-  padding-left: 80px;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .about-me-item div {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
 }
 .about-me-item div i {
-  font-size: 55px;
+  font-size: 125px;
+  text-align: center;
   color: #129CF3;
   transition: all 1s;
   -webkit-transition: all 1s;
