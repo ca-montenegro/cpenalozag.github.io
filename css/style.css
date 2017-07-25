@@ -571,3 +571,35 @@ i {
 #btn-links i:hover {
   color: #19334d;
 }
+
+/* ========= Footer ============= */
+.footer {
+    background-color: #123;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 5px solid #129CF3;
+}
+#copyright {
+    width: 60%;
+}
+#copyright p {
+    color: #8C8B8A;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#copyright p a {
+    text-decoration: none;
+    color: #129CF3;
+}
+.scroll-top {
+    text-align: right;
+}
+.scroll-top a {
+    background-color: #129CF3;
+    padding: 25px;
+}
+.scroll-top a i {
+    color: #fff;
+    font-size: 35px;
+}
