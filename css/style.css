@@ -44,6 +44,12 @@ i {
   margin-top: 8vh;
   margin-bottom: 4vh;
 }
+.navbar-header h4 {
+  color: #129CF3;
+  text-transform: uppercase;
+  font-size: 18;
+  margin-bottom: 2%;
+}
 .container {
   padding-top: 5vh;
   padding-bottom: 7vh;
