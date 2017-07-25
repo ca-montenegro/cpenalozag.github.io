@@ -28,19 +28,24 @@ i {
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
+  padding: 0% 3%;
   z-index: 110;
   transition: all 1s;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
+  visibility: hidden;
 }
 .navbar-header h4 {
   padding-top: 1vh;
   color: #129CF3;
   text-transform: uppercase;
   font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 2%;
+  font-weight: 800;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
 }
 .container-navbar{
   font-size: 16px;
@@ -388,6 +393,7 @@ i {
 }
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
   font-size: 28px;
+  font-weight: 600;
   margin-top: 0;
   margin-bottom: 0;
   color: #152e47;
