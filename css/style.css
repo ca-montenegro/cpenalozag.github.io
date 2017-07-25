@@ -26,6 +26,7 @@ i {
 /* ========= NavBar ============= */
 
 .navbar-default {
+  visibility: hidden;
   background-color: transparent;
   border-color: transparent;
   padding: 0% 3%;
@@ -34,7 +35,7 @@ i {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
-  visibility: hidden;
+
 }
 .navbar-header h4 {
   padding-top: 1vh;
