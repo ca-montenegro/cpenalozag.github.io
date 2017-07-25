@@ -38,13 +38,57 @@ $(document).ready(function(){
 
 });
 
-//add smooth scrolling
+//Active menu item on click
 $(document).ready(function() {
 
+  'use strict';
+
+  $('.navbar-nav li a').click(function(){
     'use strict';
 
+    $('.navbar-nav li a').parent().removeClass("active");
+    $(this).parent().addClass("active");
 
-    $('.nav-item, .contact-down, .about-down, #to-top').click(function() {
+  });
+
+});
+
+//Active menu item on scroll
+$(document).ready(function() {
+
+  'use strict';
+
+  $(window).scroll(function(){
+    'use strict';
+
+    $("section").each(function(){
+
+      'use strict';
+      var idCurrent = $(this).attr("id");
+      var height = $(this).outerHeight();
+      var grttop = $(this).offset().top - 70;
+
+      if ($(window).scrollTop()>grttop && $(window).scrollTop()<grttop+height){
+        $(".navbar-nav li a[href='#"+idCurrent+"']").parent().addClass("active");
+      }
+      else{
+        $(".navbar-nav li a[href='#"+idCurrent+"']").parent().removeClass("active");
+      }
+
+
+    });
+
+  });
+
+});
+
+//Smooth scrolling
+$(document).ready(function() {
+
+  'use strict';
+
+
+  $('.nav-item, .contact-down, .about-down, #to-top').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
