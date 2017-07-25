@@ -92,29 +92,23 @@ i {
   border: 2px solid #129CF3;
   padding: 1%;
   border-radius: 50%;
-  margin-top: 8vh;
-  margin-bottom: 4vh;
+  margin-top: 4vh;
 }
 .container {
   padding-top: 5vh;
   padding-bottom: 7vh;
   position: relative;
   height: 100%;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
-.row-centered {
-  margin-top: 12vh;
-  margin-left: 10vh;
-  margin-right: 10vh;
+.row-centered{
+  padding-top: 10%;
 }
 .header-overlay {
   height: 100%;
   width: 100%;
   position: absolute;
   background-color: rgba(31,31,31,0.5);
-}
-.header-text{
-  margin-left: 6vh;
 }
 .header-text h1 {
   text-align: left;
@@ -126,13 +120,13 @@ i {
   text-transform: uppercase;
 }
 .header-text p {
+  margin: 0;
   text-align: left;
   color: #fff;
 }
 .header-btns {
   text-align: left;
   padding-top: 10%;
-  margin-left: 7vh;
 }
 #btn-contact {
   color: #129cf3;
