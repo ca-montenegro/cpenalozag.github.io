@@ -7,7 +7,7 @@ $(document).ready(function(){
 
     'use script';
 
-    if ($(window).scrollTop()<80){
+    if ($(window).scrollTop()<500){
 
       $('.navbar').css({
 
@@ -73,12 +73,22 @@ $(document).ready(function() {
       }
       else{
         $(".navbar-nav li a[href='#"+idCurrent+"']").parent().removeClass("active");
+        $(".navbar-nav li a[href='#home']").parent().removeClass("active");
       }
 
 
     });
 
   });
+
+});
+
+//Add wow animations -> initialize
+$(document).ready(function() {
+
+  'use strict';
+
+  new WOW().init();
 
 });
 
