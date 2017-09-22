@@ -121,6 +121,7 @@ i {
   text-transform: uppercase;
 }
 .header-text p {
+  font-size: 23px;
   margin: 0;
   text-align: left;
   color: #fff;
