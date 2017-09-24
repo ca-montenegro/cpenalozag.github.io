@@ -466,6 +466,7 @@ i {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -488,7 +489,7 @@ i {
   padding: 3px;
 }
 .projects-caption {
-  padding-bottom: 8%;
+  height: 55vh;
 }
 .projects-caption h2 {
   color: #129CF3;
