@@ -109,7 +109,7 @@ i {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: rgba(31,31,31,0.5);
+  background-color: rgba(30,50,80,0.5);
 }
 .header-text h1 {
   text-align: left;
@@ -253,7 +253,7 @@ i {
   margin-left:-30px;
 }
 .experience {
-  background-image: url("../images/1.png");
+  background-image: url("../images/1.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -462,7 +462,7 @@ i {
   margin-left:-30px;
 }
 .projects {
-  background-image: url("../images/2.png");
+  background-image: url("../images/2.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
