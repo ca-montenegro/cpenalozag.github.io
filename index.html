@@ -275,6 +275,7 @@
                   <p><strong>Technologies:</strong></p>
                   <p>  • Python</p>
                   <p>  • Flask</p>
+                  <p>  • SciPy</p>
                 </div>
 
               </div>
@@ -525,23 +526,23 @@
 
           <h2>Contact me</h2>
 
-          <form role="form" action = "" method="POST" enctype = "text/plain">
+          <form name="sentMessage" id="contactForm" novalidate enctype = "text/plain">
 
             <div class="row contact-form">
 
               <div class="col-md-4">
 
-                <input type="text" class="form-control" id="name" placeholder="Name">
-                <input type="email" class="form-control" id="email" placeholder="Email">
-                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                <input type="text" class="form-control" id="name" placeholder="Name" required data-validation-required-message="Please enter your name.">
+                <input type="email" class="form-control" id="email" placeholder="Email" required data-validation-required-message="Please enter your email.">
+                <input type="text" class="form-control" id="subject" placeholder="Subject" required data-validation-required-message="Please enter a subject.">
 
               </div>
 
               <div class="col-md-8">
 
-                <textarea class="form-control" id="message" rows="25" cols="10" placeholder="Message Text...."></textarea>
+                <textarea class="form-control" id="message" rows="25" cols="10" placeholder="Message Text...." required data-validation-required-message="Please enter a message."></textarea>
 
-                <button type="button" class="btn btn-default submit-btn form_submit">SEND</button>
+                <button type="submit" class="btn btn-default submit-btn form_submit">SEND</button>
 
               </div>
 
@@ -554,7 +555,7 @@
 
             <div class = "col-md-8 col-md-offset-2 snicons">
 
-              <div class="col-md-4 text-center">
+              <div class="col-md-6 text-center">
                 <a id="btn-links" class="btn" href="https://www.linkedin.com/in/cpenalozag/" target="none">
                   <span class="fa-stack fa-4x">
                     <i class="fa fa-square-o fa-stack-2x"></i>
@@ -563,7 +564,7 @@
                 </a>
               </div>
 
-              <div class="col-md-4 text-center">
+              <div class="col-md-6 text-center">
                 <a id="btn-links" class="btn" href="https://github.com/cpenalozag" target="none">
                   <span class="fa-stack fa-4x">
                     <i class="fa fa-square-o fa-stack-2x"></i>
@@ -581,27 +582,27 @@
           </a>
         </div>
 
-      <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center">
         <a id="btn-links" class="btn" href="https://www.facebook.com/carlospenalozag" target="none">
-          <span class="fa-stack fa-4x">
-            <i class="fa fa-square-o fa-stack-2x"></i>
-            <i class="fa fa-facebook fa-stack-1x"></i>
-          </span>
-        </a>
-      </div>
-    -->
-      <div class="col-md-4 text-center">
-        <a id="btn-links" class="btn" href="mailto:c.penaloza@uniandes.edu.co?">
-          <span class="fa-stack fa-4x">
-             <i class="fa fa-square-o fa-stack-2x"></i>
-             <i class="fa fa-envelope fa-stack-1x"></i>
-          </span>
-        </a>
-      </div>
+        <span class="fa-stack fa-4x">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="fa fa-facebook fa-stack-1x"></i>
+      </span>
+    </a>
+  </div>
 
-    </div>
+  <div class="col-md-4 text-center">
+  <a id="btn-links" class="btn" href="mailto:c.penaloza@uniandes.edu.co?">
+  <span class="fa-stack fa-4x">
+  <i class="fa fa-square-o fa-stack-2x"></i>
+  <i class="fa fa-envelope fa-stack-1x"></i>
+</span>
+</a>
+</div>
+-->
+</div>
 
-  </section>
+</section>
 
 <!-- Footer -->
 <footer class="footer">
@@ -642,6 +643,10 @@
 
 <!-- Wow JS -->
 <script src="js/wow.min.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
 
 <!-- Custom JS -->
 <script defer src="js/custom.js"></script>
