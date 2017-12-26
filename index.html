@@ -526,19 +526,22 @@
 
           <h2>Contact me</h2>
 
-          <form name="sentMessage" id="contactForm" novalidate enctype = "text/plain">
+          <form name="sentMessage" id="contactForm" enctype = "text/plain">
 
             <div class="row contact-form">
 
-              <div class="col-md-4">
+              <div class="col-md-4 form-group">
 
-                <input type="text" class="form-control" id="name" placeholder="Name" required data-validation-required-message="Please enter your name.">
-                <input type="email" class="form-control" id="email" placeholder="Email" required data-validation-required-message="Please enter your email.">
-                <input type="text" class="form-control" id="subject" placeholder="Subject" required data-validation-required-message="Please enter a subject.">
+                <input type="text" class="form-control" id="name" placeholder="Name" required  />
+                <p class="help-block text-danger"></p>
+                <input type="email" class="form-control" id="email" placeholder="Email" required data-validation-required-message="Please enter your email." />
+                <p class="help-block text-danger"></p>
+                <input type="text" class="form-control" id="subject" placeholder="Subject" required data-validation-required-message="Please enter a subject." />
+                <p class="help-block text-danger"></p>
 
               </div>
 
-              <div class="col-md-8">
+              <div class="col-md-8 form-group">
 
                 <textarea class="form-control" id="message" rows="25" cols="10" placeholder="Message Text...." required data-validation-required-message="Please enter a message."></textarea>
                 <div id="success"></div>
