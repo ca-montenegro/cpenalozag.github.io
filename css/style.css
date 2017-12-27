@@ -263,8 +263,9 @@ i {
   -o-background-size: cover;
 }
 .exp-img{
-  width:70%;
-  height:70%;
+  margin-top: 5%;
+  margin-left: 15%;
+  width:50%;
 }
 .timeline-centered {
   position: relative;
@@ -315,7 +316,7 @@ i {
 }
 .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-label {
   margin-left: 0;
-  margin-right: 70px;
+  margin-right: 50px;
 }
 .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-label:after {
   left: auto;
@@ -367,7 +368,7 @@ i {
   position: relative;
   background: #f5f5f6;
   padding: 1.2em;
-  margin-left: 70px;
+  margin-left: 50px;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
