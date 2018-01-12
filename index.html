@@ -514,13 +514,13 @@
 
           <h2>Contact me</h2>
 
-          <form name="sentMessage" id="contactForm" enctype = "text/plain">
+          <form  name="sentMessage" id="contactForm" novalidate enctype = "text/plain">
 
             <div class="row contact-form col-md-10 col-md-offset-1">
 
               <div class="col-md-4 form-group">
 
-                <input type="text" class="form-control" id="name" placeholder="Name" required  />
+                <input type="text" class="form-control" id="name" placeholder="Name" required data-validation-required-message="Please enter your name." />
                 <p class="help-block text-danger"></p>
                 <input type="email" class="form-control" id="email" placeholder="Email" required data-validation-required-message="Please enter your email." />
                 <p class="help-block text-danger"></p>
