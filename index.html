@@ -448,12 +448,18 @@
                     <h4><span>Team Leader, </span>Team size: 5 <i class="fa fa-users"></i></h4>
                     <p class="text-left"><strong>Description: </strong>IoT application aimed at preventing health issues in mines by monitoring different variables and activating control systems as necessary.</p>
                     <p class="text-left"><strong>Technologies: </strong>Python, Django, Node Red, Kafka, ZooKeeper, Cassandra, HTML+CSS, Arduino</p>
-                    <a id="btn-repo" class="btn" href="https://github.com/ISIS2503/Grupo6" target="none">Repository
-                      <i class="fa fa-github" ></i>
-                    </a>
-
+                    <p><a class="button btn-info" href="#popup1">More Info</a></p>
                   </div>
-
+                </div>
+                <div id="popup1" class="overlayBox">
+                  <div class="popup">
+                    <h2>Info box</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                      <p>This is done totally without JavaScript. Just HTML and CSS.</p>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Stamford_Bridge_Clear_Skies.JPG">
+                    </div>
+                  </div>
                 </div>
 
                 <!-- item 02 -->
@@ -479,9 +485,7 @@
                     <h4><span>Developer, </span>Team size: 2 <i class="fa fa-users"></i></h4>
                     <p class="text-left"><strong>Description: </strong>Implemented the back-end of a transactional application that can handle the persistence and distributed access to large amounts of data from an events company.</p>
                     <p class="text-left"><strong>Technologies: </strong>Oracle SQL, Java, WildFly, RabbitMQ, JMS</p>
-                    <a id="btn-repo" class="btn" href="https://github.com/cpenalozag/FestivAndes" target="none">Repository
-                      <i class="fa fa-github" ></i>
-                    </a>
+                    <button type="button" class="btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="trigger-btn">MORE INFO</button>
                   </div>
 
                 </div>
@@ -641,6 +645,7 @@
 
 <!-- Custom JS -->
 <script defer src="js/custom.js"></script>
+<script src="js/modal.js"></script>
 
 <script>
 function init() {
