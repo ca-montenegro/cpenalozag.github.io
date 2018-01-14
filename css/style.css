@@ -509,8 +509,8 @@ i {
   font-style: italic;
   font-weight: 300;
 }
-#gitbut{
-  color: #fff;
+.gitbut{
+  font-size: 23px;
 }
 .projects-caption p {
   color: #D8D8D8;
@@ -545,84 +545,128 @@ i {
   -moz-transition: all 1s;
   -o-transition: all 1s;
 }
+.btn-info:hover , .btn-info:active, .btn-info:focus , .btn-info:enabled , .btn-info:visited, .btn-info:link {
+  text-decoration: none;
+}
 #btn-repo:hover {
   background-color: #129cf3;
   color: #fff;
 }
-.button {
-	text-decoration: none;
-	transition: all 0.2s ease-out;
-  &:hover {
-    border-color: #999;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
-  }
-}
-
-.overlayBox {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-  left: 0;
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
   right: 0;
-  background: rgba(0,0,0,0.5);
-	transition: opacity 200ms;
-  visibility: hidden;
-	opacity: 0;
-	&.light {
-    background: rgba(255,255,255,0.5);
-  }
-  .cancel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: default;
-  }
-  &:target {
-    visibility: visible;
-    opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .caption {
+  background: rgba(24, 188, 156, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  text-align: center;
+  top: 20%;
+  margin-top: -12px;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+  margin-top: -12px;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+  margin: 0;
+}
+#portfolio * {
+  z-index: 2;
+}
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
   }
 }
-
-.popup {
-	margin: 50px auto;
-	padding: 20px;
-	background: #fff;
-	border: 1px solid #666;
-	width: 80%;
-  height: 80%;
-	box-shadow: 0 0 50px rgba(0,0,0,0.5);
-	position: relative;
-  .light & {
-    border-color: #aaa;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
-  }
-
-  .close {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 20px;
-    right: 20px;
-    opacity: 0.8;
-    transition: all 200ms;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #666;
-    &:hover {
-      opacity: 1;
-    }
-  }
-  .content {
-    max-height: 80%;
-    overflow: scroll;
-  }
-  p {
-    margin: 0 0 1em;
-    &:last-child {
-      margin: 0;
-    }
-  }
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+.portfolio-modal .modal-content h2 {
+  color: #152e47;
+  margin: 0;
+  font-size: 3em;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+.portfolio-modal .modal-content .item-details {
+  margin: 30px 0;
+}
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 125px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #642848;
+  opacity: 0.3;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051;
+}
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #642848;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
+}
+.info-popup, .info-popup:hover , .info-popup:active, .info-popup:focus , .info-popup:enabled , .info-popup:visited, .info-popup:link {
+  text-decoration: none !important;
+  color: #129cf3;
+}
+.light-blue {
+  color: #129cf3;
 }
 
 /* ========= Contact ============= */
