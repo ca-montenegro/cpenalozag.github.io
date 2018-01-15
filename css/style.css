@@ -22,6 +22,9 @@ i {
   color: #129CF3;
   font-size: 25px;
 }
+ul {
+  text-align: left;
+}
 
 /* ========= NavBar ============= */
 
@@ -203,6 +206,7 @@ i {
   padding-left: 5%;
   padding-right: 5%;
 }
+.i-am-centered { margin-left: 20%; max-width: 80%;}
 .about-me-item div {
   position: relative;
   top: 0;
