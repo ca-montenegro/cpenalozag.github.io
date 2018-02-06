@@ -12,6 +12,11 @@ body {
 html, body {
   height:100%;
 }
+
+ul {
+  text-align: left;
+}
+
 p {
   font-size: 18px;
   line-height: 28px;
@@ -21,9 +26,6 @@ p {
 i {
   color: #129CF3;
   font-size: 25px;
-}
-ul {
-  text-align: left;
 }
 
 /* ========= NavBar ============= */
@@ -699,23 +701,23 @@ ul {
   margin-bottom: 7px;
 }
 .contact-form .form-control {
-    display: block;
-    width: 100%;
-    height: 50px;
-    padding: 6px 12px;
-    font-size: 18px;
-    line-height: 21px;
-    color: #555;
-    background-color: transparent;
-    border: 1px solid #aeaeae;
-    border-radius: 3px;
-    margin-bottom: 15px;
-    opacity: .8;
-    outline: 0px !important;
-    transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    -webkit-transition: all 1s;
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 6px 12px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #555;
+  background-color: transparent;
+  border: 1px solid #aeaeae;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  opacity: .8;
+  outline: 0px !important;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
 
 }
 
@@ -724,32 +726,32 @@ ul {
 }
 
 #message {
-    height: 117px;
-    resize: none;
+  height: 117px;
+  resize: none;
 }
 .submit-btn,
 .submit-btn:active,
 .submit-btn:focus,
 .submit-btn:visited {
 
-    background-color: transparent;
-    border: 1px solid #129CF3;
-    border-radius: 4px;
-    width: 100%;
-    height: 50px;
-    text-transform: uppercase;
-    font-size: 18px;
-    color: #129CF3;
-    outline: 0px !important;
-    transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    -webkit-transition: all 1s;
+  background-color: transparent;
+  border: 1px solid #129CF3;
+  border-radius: 4px;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #129CF3;
+  outline: 0px !important;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
 }
 .submit-btn:hover {
-    background: #129CF3;
-    color: #fff;
-    border-color: #129CF3;
+  background: #129CF3;
+  color: #fff;
+  border-color: #129CF3;
 }
 #btn-links i {
   padding: 0;
@@ -780,32 +782,32 @@ ul {
 
 /* ========= Footer ============= */
 .footer {
-    background-color: #123;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    border-bottom: 5px solid #129CF3;
+  background-color: #123;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 5px solid #129CF3;
 }
 #copyright {
-    width: 60%;
+  width: 60%;
 }
 #copyright p {
-    color: #8C8B8A;
-    font-weight: 600;
-    font-size: 15px;
-    text-transform: uppercase;
+  color: #8C8B8A;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 #copyright p a {
-    text-decoration: none;
-    color: #129CF3;
+  text-decoration: none;
+  color: #129CF3;
 }
 .scroll-top {
-    text-align: right;
+  text-align: right;
 }
 .scroll-top a {
-    background-color: #129CF3;
-    padding: 25px;
+  background-color: #129CF3;
+  padding: 25px;
 }
 .scroll-top a i {
-    color: #fff;
-    font-size: 35px;
+  color: #fff;
+  font-size: 35px;
 }
