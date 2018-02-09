@@ -1,5 +1,6 @@
 /* global $ */
 /* global WOW */
+
 /* Show and hide navbar */
 $(document).ready(function(){
 

@@ -113,9 +113,13 @@ i {
 }
 @media all and (max-width: 600px)
 {
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
   .img-front{
     height:30vh;
-    margin-left: 20%
+    margin: auto;
   }
   .row-centered{
     padding-top: 0%;
@@ -207,12 +211,13 @@ i {
     text-align: center;
   }
   .header-text h1 {
-    padding-top: 10%;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 600;
+    line-height: 30px;
   }
   .header-text p {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 20px;
   }
   #btn-about {
     font-size: 16px;
@@ -487,6 +492,12 @@ i {
   .timeline-centered:before {
     bottom: 180px;
   }
+  .timeline-centered{
+    margin-bottom: 0;
+  }
+  .timeline-centered .timeline-entry.begin {
+    height: 0;
+  }
 }
 
 
@@ -585,7 +596,7 @@ i {
 @media all and (max-width: 600px)
 {
   .projects-caption {
-    height: 90vh;
+    height: 90vmax;
   }
 }
 .projects-caption h2 {
@@ -900,4 +911,16 @@ i {
 .scroll-top a i {
   color: #fff;
   font-size: 35px;
+}
+@media all and (max-width: 600px)
+{
+  #copyright p {
+    font-size: 12px;
+  }
+  .scroll-top a {
+    padding: 15px;
+  }
+  .scroll-top a i {
+    font-size: 35px;
+  }
 }
