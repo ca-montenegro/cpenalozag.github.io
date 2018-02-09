@@ -15,6 +15,7 @@ html, body {
 
 ul {
   text-align: left;
+  padding-left:3%;
 }
 
 p {
@@ -98,17 +99,27 @@ i {
   border: 2px solid #129CF3;
   padding: 1%;
   border-radius: 50%;
-  margin-top: 4vh;
+  margin-top: 0;
 }
 .container {
-  padding-top: 5vh;
-  padding-bottom: 7vh;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
   position: relative;
   height: 100%;
   overflow-y: hidden;
 }
 .row-centered{
-  padding-top: 10%;
+  padding-top: 15%;
+}
+@media all and (max-width: 600px)
+{
+  .img-front{
+    height:30vh;
+    margin-left: 20%
+  }
+  .row-centered{
+    padding-top: 0%;
+  }
 }
 .header-overlay {
   height: 100%;
@@ -119,7 +130,7 @@ i {
 .header-text h1 {
   text-align: left;
   color: #fff;
-  padding: 10% 0% 0%;
+  padding: 0;
   font-size: 42px;
   font-weight: 600;
   line-height: 45px;
@@ -130,6 +141,23 @@ i {
   margin: 0;
   text-align: left;
   color: #fff;
+}
+@media all and (max-width: 600px)
+{
+  .header-text h1 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .header-text p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .header-btns a {
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 5%
+  }
 }
 .header-btns {
   text-align: left;
@@ -172,6 +200,26 @@ i {
   color: #129CF3;
   font-size: 25px;
   padding-left: 5%;
+}
+@media all and (max-width: 600px)
+{
+  .header-btns {
+    text-align: center;
+  }
+  .header-text h1 {
+    padding-top: 10%;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .header-text p {
+    font-size: 18px;
+  }
+  #btn-about {
+    font-size: 16px;
+  }
+  #btn-contact {
+    font-size: 16px;
+  }
 }
 
 /* ========= About me ============= */
@@ -228,6 +276,15 @@ i {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 800;
+}
+.about-icons{
+
+}
+@media all and (max-width: 600px)
+{
+  .about-icons{
+    padding-top:100%;
+  }
 }
 
 /* ========= Experience ============= */
@@ -412,6 +469,26 @@ i {
   margin: 0;
 }
 
+@media all and (max-width: 600px)
+{
+  .timeline-centered .timeline-entry {
+    position: relative;
+    width: 90%;
+    float: right;
+    margin-bottom: 30px;
+    clear: both;
+  }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
+    border-color: transparent transparent transparent transparent;
+  }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+    background: transparent;
+  }
+  .timeline-centered:before {
+    bottom: 180px;
+  }
+}
+
 
 /* ========= skills ============= */
 .skills h2 {
@@ -442,8 +519,15 @@ i {
   font-weight: 800;
 }
 .medium-img{
-  max-width: width:150px;
-  max-height:150px;
+  max-width:20vh;
+  max-height:20vh;
+  margin-left: 25%;
+}
+@media all and (max-width: 600px)
+{
+  .medium-img{
+    margin-left: 15%;
+  }
 }
 
 /* ========= Projects ============= */
@@ -473,7 +557,7 @@ i {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -496,7 +580,13 @@ i {
   padding: 3px;
 }
 .projects-caption {
-  height: 55vh;
+  height: 60vh;
+}
+@media all and (max-width: 600px)
+{
+  .projects-caption {
+    height: 90vh;
+  }
 }
 .projects-caption h2 {
   color: #129CF3;

@@ -1,3 +1,5 @@
+/* global $ */
+/* global WOW */
 /* Show and hide navbar */
 $(document).ready(function(){
 
@@ -5,7 +7,7 @@ $(document).ready(function(){
 
   $(window).scroll(function(){
 
-    'use script';
+    'use strict';
 
     if ($(window).scrollTop()<500){
 
@@ -75,7 +77,6 @@ $(document).ready(function() {
         $(".navbar-nav li a[href='#"+idCurrent+"']").parent().removeClass("active");
         $(".navbar-nav li a[href='#home']").parent().removeClass("active");
       }
-
 
     });
 

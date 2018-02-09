@@ -10,14 +10,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#123">
 
-  <!--Google Fonts-->
+  <!-- Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Raleway:500italic,600italic,600,700,700italic,300italic,300,400,400italic,800,900' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600italic,700,900' rel='stylesheet' type='text/css'>
 
-  <!--Favicon-->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/logo.png">
 
-  <!--CSS-->
+  <!-- bootstrap -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
   <!--FontAwesome-->
@@ -26,8 +26,8 @@
   <!--Animate CSS-->
   <link rel="stylesheet" type="text/css" href="css/animate.css">
 
+  <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
 
 </head>
 
@@ -42,7 +42,6 @@
 
       <div class="container-navbar">
 
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -53,7 +52,6 @@
           <h4>Carlos</h4>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#home" class="nav-item">HOME</a></li>
@@ -75,13 +73,13 @@
 
         <div class="row-centered">
 
-          <div class="col-md-8">
+          <div class="col-md-8 col-xs-12">
 
             <div class="header-text">
 
               <!--Title and description-->
-              <h1 class="name">Carlos Penaloza</h1>
-              <p>Systems and Computing Engineering</p>
+              <h1>Carlos Penaloza</h1>
+              <p>Systems and Computing Engineering,</p>
               <p>Industrial Engineering</p>
 
             </div>
@@ -99,12 +97,12 @@
 
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 col-xs-12">
 
             <div class="header-photo text-center">
 
               <!--Title and description-->
-              <img src="images/ph.png" alt="Photo">
+              <img class="img-responsive img-front" src="images/ph.png" alt="Photo">
 
             </div>
 
@@ -142,13 +140,13 @@
 
               <div class="col-md-9 col-xs-9">
                 <h3>My education</h3>
-                <p>I am currently enrolled in a double bachelors degree at the Universidad de los Andes. On my free time I like to carry out online courses to acquire skills and learn new things.</p>
+                <p style="text-align:justify;">I am currently enrolled in a double bachelors degree at the Universidad de los Andes. On my free time I like to carry out online courses to acquire skills and learn new things.</p>
 
               </div>
 
               <div class="col-md-3 col-xs-3 text-center">
                 <!-- About me item icon -->
-                <div><i style="font-size: 20vmin;padding-top:10%;" class="fa fa-book pull-center"></i></div>
+                <div><i style="font-size: 20vmin;" class="fa fa-book pull-center about-icons"></i></div>
               </div>
 
             </div>
@@ -156,7 +154,7 @@
 
               <div class="col-md-3 col-xs-3">
                 <!-- About me item icon -->
-                <div><i style="font-size: 20vmin;padding-top:10%;" class="fa fa-heartbeat"></i></div>
+                <div><i style="font-size: 20vmin;" class="fa fa-heartbeat about-icons"></i></div>
               </div>
 
               <div class="col-md-9 col-xs-9">
@@ -179,7 +177,7 @@
 
               <div class="col-md-3 col-xs-3 text-center">
                 <!-- About me item icon -->
-                <div><i style="font-size: 20vmin;padding-top:10%;" class="fa fa-compass"></i></div>
+                <div><i style="font-size: 20vmin;" class="fa fa-compass about-icons"></i></div>
               </div>
 
             </div>
@@ -210,6 +208,7 @@
 
           <div class="timeline-centered">
 
+            <!-- First timeline entry -->
             <div class="timeline-entry wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s">
 
               <div class="timeline-entry-inner">
@@ -236,6 +235,7 @@
 
             </div>
 
+            <!-- Second timeline entry -->
             <div class="timeline-entry left-aligned wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
 
               <div class="timeline-entry-inner">
@@ -249,15 +249,24 @@
                   <p>Explain topics and help solve doubts to students. Review and grade assessments. Aid the teacher throughout the course.</p>
 
                   <p><strong>Courses: </strong></p>
-                  <p>  • Algorithms & Object Oriented Programming (Jan–Jun 2016)</p>
-                  <p>  • Data Structures (Jan–Jun 2017)</p>
-                  <p>  • Software Development in Teams (Aug–Dec 2017)</p>
+                  <ul>
+                    <li>
+                      <p>Algorithms & Object Oriented Programming (Jan–Jun 2016)</p>
+                    </li>
+                    <li>
+                      <p>Data Structures (Jan–Jun 2017)</p></p>
+                    </li>
+                    <li>
+                      <p>Software Development in Teams (Aug–Dec 2017)</p>
+                    </li>
+                  </ul>
                 </div>
 
               </div>
 
             </div>
 
+            <!-- Third timeline entry -->
             <div class="timeline-entry wow fadeInRight" data-wow-duration="1s" data-wow-delay=".6s">
 
               <div class="timeline-entry-inner">
@@ -270,16 +279,14 @@
                   <h2>Research Assistant</h2> <h3>August 2017 – Present</h3>
                   <p>Contribute to the development of PhD projects.</p>
                   <p><strong>Projects:</strong></p>
-                  <ul style="padding-left:3%;">
+                  <ul>
                     <li>
-                      <p>Solution architecture project's financial analyisis and simulation</p>
-                      <p>• Python</p>
-                      <p>• Flask</p>
-                      <p>• SciPy</p>
+                      <p>Web framework that enables financial analysis and simulation of a Solution Architecture project</p>
+                      <p><span class="light-blue">Technologies:</span> Python, Flask, SciPy</p>
                     </li>
                     <li>
-                      <p>AI guided Software Architecture</p>
-                      <p>• Python</p>
+                      <p>AI driven Software Architecture</p>
+                      <p><span class="light-blue">Technologies:</span> Python</p>
                     </li>
                   </ul>
 
@@ -332,7 +339,7 @@
 
             <div class="col-md-4 col-xs-6 text-center">
               <h3>Java</h3>
-              <img class="medium-img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/java.png" alt="Java Logo">
+              <img class="medium-img img-responsive" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/java.png" alt="Java Logo">
               <div>
                 <p class="wow fadeIn" data-wow-duration=".8s" data-wow-delay=".8s">
                   <i class="fa fa-star fa-1x"></i>
@@ -346,7 +353,7 @@
 
             <div class="col-md-4 col-xs-6 text-center">
               <h3>Python</h3>
-              <img class="medium-img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/python.png" alt="Python logo">
+              <img class="medium-img img-responsive text-center" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/python.png" alt="Python logo">
               <div>
                 <p class="wow fadeIn" data-wow-duration=".8s" data-wow-delay=".8s">
                   <i class="fa fa-star fa-1x"></i>
@@ -360,7 +367,7 @@
 
             <div class="col-md-4 col-xs-6 text-center">
               <h3>SQL</h3>
-              <img class="medium-img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/sql.png" alt="Sql developer logo">
+              <img class="medium-img img-responsive" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/sql.png" alt="Sql developer logo">
               <div>
                 <p class="wow fadeIn" data-wow-duration=".8s" data-wow-delay=".8s">
                   <i class="fa fa-star fa-1x"></i>
@@ -374,7 +381,7 @@
 
             <div class="col-md-4 col-xs-6 text-center">
               <h3>JavaScript</h3>
-              <img class="medium-img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/javascript.png" alt="Javascript logo">
+              <img class="medium-img img-responsive" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/javascript.png" alt="Javascript logo">
               <div>
                 <p class="wow fadeIn" data-wow-duration=".8s" data-wow-delay=".8s">
                   <i class="fa fa-star fa-1x"></i>
@@ -388,7 +395,7 @@
 
             <div class="col-md-4 col-xs-6 text-center">
               <h3>HTML+CSS</h3>
-              <img class="medium-img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/html_css.png" alt="Html and css logos">
+              <img class="medium-img img-responsive" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/html_css.png" alt="Html and css logos">
               <div>
                 <p class="wow fadeIn" data-wow-duration=".8s" data-wow-delay=".8s">
                   <i class="fa fa-star fa-1x"></i>
@@ -396,6 +403,20 @@
                   <i class="fa fa-star fa-1x"></i>
                   <i class="fa fa-star fa-1x"></i>
                   <i class="fa fa-star-half-o fa-1x"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-xs-6 text-center">
+              <h3>R</h3>
+              <img class="medium-img img-responsive" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/r.png" alt="R logo">
+              <div>
+                <p class="wow fadeIn" data-wow-duration=".8s" data-wow-delay=".8s">
+                  <i class="fa fa-star fa-1x"></i>
+                  <i class="fa fa-star fa-1x"></i>
+                  <i class="fa fa-star fa-1x"></i>
+                  <i class="fa fa-star-o fa-1x"></i>
+                  <i class="fa fa-star-o fa-1x"></i>
                 </p>
               </div>
             </div>
@@ -442,10 +463,10 @@
                 <li data-target="#carousel-projects" data-slide-to="2"></li>
               </ol>
 
-              <!-- wrapper for slides -->
+              <!-- Wrapper for slides -->
               <div class="carousel-inner">
 
-                <!-- item 01 -->
+                <!-- Item 1 -->
                 <div class="item active text-center">
                   <img class="center-block sm-img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/colmine.png" alt="Colmines project logo">
                   <div class="projects-caption">
@@ -581,7 +602,7 @@
                   </div>
                 </div>
 
-                <!-- item 02 -->
+                <!-- Item 2 -->
                 <div class="item text-center">
                   <img class="center-block sm-img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/habitaciones.png" alt="Habitaciones project logo">
                   <div class="projects-caption">
@@ -644,7 +665,7 @@
                   </div>
                 </div>
 
-                <!-- item 03 -->
+                <!-- Item 3 -->
                 <div class="item text-center">
                   <img class="center-block sm-img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/festivandes.png" alt="FestivAndes project logo">
                   <div class="projects-caption">
@@ -766,16 +787,7 @@
 
   </footer>
 
-  <!--JS Libraries-->
-  <script src="js/jquery.js"></script>
-  <script defer src="js/bootstrap.min.js"></script>
-
-  <!-- Wow JS -->
-  <script src="js/wow.min.js"></script>
-
-  <!-- Custom JS -->
-  <script defer src="js/custom.js"></script>
-
+  <!-- Manual lazy load -->
   <script>
   function init() {
     var imgDefer = document.getElementsByTagName('img');
@@ -787,6 +799,14 @@
   }
   window.onload = init;
   </script>
+
+  <!--JS Libraries-->
+  <script defer src="js/jquery.js"></script>
+  <script defer src="js/bootstrap.min.js"></script>
+  <script defer src="js/wow.min.js"></script>
+
+  <!-- Custom JS -->
+  <script defer src="js/custom.js"></script>
 
 </body>
 
