@@ -283,12 +283,12 @@ i {
   font-weight: 800;
 }
 .about-icons{
-
+  padding-top:1vmin;
 }
 @media all and (max-width: 600px)
 {
   .about-icons{
-    padding-top:100%;
+    padding-top:5vmin;
   }
 }
 
