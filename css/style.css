@@ -125,6 +125,10 @@ i {
   .row-centered{
     padding-top: 0%;
   }
+  .header-photo img {
+    margin-top: 8vmax;
+    margin-bottom: 8vmax;
+  }
 }
 .header-overlay {
   height: 100%;
