@@ -35,6 +35,7 @@ i {
   visibility: hidden;
   background-color: transparent;
   border-color: transparent;
+  'opacity':'0'
   padding: 0% 3%;
   z-index: 110;
   transition: all 1s;
@@ -531,7 +532,7 @@ i {
 }
 .medium-img{
   max-height:20vh;
-  margin-left: 25%;
+  margin: auto;
 }
 @media all and (max-width: 600px)
 {
