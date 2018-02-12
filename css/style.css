@@ -109,7 +109,7 @@ i {
   overflow-y: hidden;
 }
 .row-centered{
-  padding-top: 15%;
+  padding-top: 15vmax;
 }
 @media all and (max-width: 600px)
 {
@@ -530,7 +530,6 @@ i {
   font-weight: 800;
 }
 .medium-img{
-  max-width:20vh;
   max-height:20vh;
   margin-left: 25%;
 }
