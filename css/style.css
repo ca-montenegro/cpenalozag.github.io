@@ -112,7 +112,7 @@ i {
 .row-centered{
   padding-top: 15vmax;
 }
-@media all and (max-width: 600px)
+@media all and (max-width: 800px)
 {
   p {
     font-size: 16px;
@@ -151,7 +151,7 @@ i {
   text-align: left;
   color: #fff;
 }
-@media all and (max-width: 600px)
+@media all and (max-width: 800px)
 {
   .header-text h1 {
     font-size: 36px;
@@ -210,7 +210,7 @@ i {
   font-size: 25px;
   padding-left: 5%;
 }
-@media all and (max-width: 600px)
+@media all and (max-width: 1000px)
 {
   .header-btns {
     text-align: center;
@@ -566,6 +566,9 @@ i {
   height: 1px;
   background-color: #129CF3;
   margin-left:-30px;
+}
+.text-projects{
+  text-align: left;
 }
 .projects {
   background-image: url("../images/2.jpg");
