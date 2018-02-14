@@ -4,4 +4,8 @@ Personal web page developed for my web development course. Check it out [here](h
 
 It is a simple presentation website made using:
 * JavaScript
-* HTML + CSS
+* HTML
+* CSS
+* Bootstrap
+
+In the web page you can find information about my interests, projects, skills and experience.
