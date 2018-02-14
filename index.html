@@ -698,21 +698,20 @@
             <h2>Contact me</h2>
           </div>
 
-          <form id="contact-form">
+          <form id="contact-form" action="https://formspree.io/carlospg0810@gmail.com" method="POST">
             <div class="row contact-form col-md-10 col-md-offset-1">
               <div class="col-md-4 form-group">
-                <input type="text" class="form-control" placeholder="Name" required id="inputName"/>
-                <p class="help-block text-danger"></p>
-                <input type="email" class="form-control" placeholder="Email" required id="inputEmail"/>
-                <p class="help-block text-danger"></p>
-                <input type="text" class="form-control" placeholder="Subject" required id="inputSubject"/>
-                <p class="help-block text-danger"></p>
+                <input type="text" class="form-control" name="name" placeholder="Name" required id="inputName"/>
+                <input type="email" class="form-control" name="_replyto" placeholder="Email" required id="inputEmail"/>
+                <input type="text" class="form-control"name="_subject" placeholder="Subject" required id="inputSubject"/>
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="hidden" name="_next" value="https://cpenalozag.github.io/" />
               </div>
 
               <div class="col-md-8 form-group">
                 <textarea class="form-control" id="message" name="message" rows="25" cols="10" placeholder="Message Text...." required></textarea>
                 <div id="success"></div>
-                <button type="submit" class="btn btn-default submit-btn">SEND</button>
+                <button id="email-submit-btn" type="submit" class="btn btn-default submit-btn">SEND</button>
               </div>
             </div>
           </form>
@@ -795,13 +794,11 @@
     }
     window.onload = init;
     </script>
-    
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/default.min.css"/>
+
     <!--JS Libraries-->
     <script defer src="js/jquery.js"></script>
     <script defer src="js/bootstrap.min.js"></script>
     <script defer src="js/wow.min.js"></script>
-    <script defer src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
 
     <!-- Custom JS -->
     <script defer src="js/custom.js"></script>

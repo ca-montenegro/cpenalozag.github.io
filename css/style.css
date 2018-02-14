@@ -112,7 +112,7 @@ i {
 .row-centered{
   padding-top: 15vmax;
 }
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
 {
   p {
     font-size: 16px;
@@ -151,7 +151,7 @@ i {
   text-align: left;
   color: #fff;
 }
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
 {
   .header-text h1 {
     font-size: 36px;
