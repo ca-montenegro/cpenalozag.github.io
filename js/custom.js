@@ -114,30 +114,3 @@ $(document).ready(function() {
   });
 
 });
-
-//Get contact data to send mail via formspree
-/*
-$(document).ready(function() {
-$('#contact-form').submit(function(e) {
-var name    = document.getElementById('inputName');
-var email   = document.getElementById('inputEmail');
-var subject   = document.getElementById('inputSubject');
-var message = document.getElementById('message');
-
-if (!name.value || !email.value || !message.value) {
-alertify.error("Please check your entries");
-return false;
-} else {
-$.ajax({
-method: 'POST',
-url: '//formspree.io/carlospg0810@gmail.com',
-data: $('#contact-form').serialize(),
-datatype: 'json'
-});
-e.preventDefault();
-$(this).get(0).reset();
-alertify.success("Message sent");
-}
-});
-});
-*/

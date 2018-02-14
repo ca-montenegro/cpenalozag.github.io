@@ -28,6 +28,9 @@ i {
   color: #129CF3;
   font-size: 25px;
 }
+li {
+  font-size: 18px;
+}
 
 /* ========= NavBar ============= */
 
@@ -391,6 +394,9 @@ i {
   margin-left: 0;
   margin-right: 50px;
 }
+.img-centered {
+  margin: auto;
+}
 .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-label:after {
   left: auto;
   right: 0;
@@ -477,6 +483,10 @@ i {
 }
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
   margin: 0;
+}
+.btn-timeline {
+  padding-top: 5vh;
+  text-align: center;
 }
 
 @media all and (max-width: 600px)
